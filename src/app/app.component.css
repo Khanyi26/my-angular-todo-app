@@ -1,0 +1,101 @@
+/*Styles that apply across all pages */
+
+body {
+    font-family: 'Arial',  sans-serif;
+    background-color: #b7d2e7;
+    margin: 0;
+    padding: 0;
+    display: block;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: wheat;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+}
+
+li.high-priority {
+    border-left-color: rgb(243, 81, 116); 
+}
+
+li.medium-priority {
+    border-right-color:yellow;
+}
+
+li.low-priority {
+    border-right-color:yellowgreen;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #636363;
+    padding: 1em;
+    overflow: hidden;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+

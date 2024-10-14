@@ -1,0 +1,73 @@
+/*Todo list styles*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border-left: 5px solid;
+}
+
+li.high-priority {
+    border-left-color: rgb(243, 81, 116); 
+}
+
+li.medium-priority {
+    border-right-color:yellow;
+}
+
+li.low-priority {
+    border-right-color:yellowgreen;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button {
+    background-color: #636363;
+    color: bisque;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #5855e9;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+
+form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: beige;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button.add-task {
+    background-color: #636363;
+}
+
+button.add-task:hover {
+    background-color: #597592;
+}
+

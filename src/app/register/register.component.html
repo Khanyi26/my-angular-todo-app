@@ -1,0 +1,29 @@
+<!--This will contain the registration form-->
+
+<div class="register-container">
+    <h2>Register</h2>
+    <form (ngSubmit)="onRegister()">
+        <h3>Please Enter Your Detials Below:</h3>
+        <div class="forms">
+            <label>FullName(s): 
+                <input id = "name" type = "text" name = "name" required autocomplete="given-name" />
+            </label>
+        </div>
+        <div class="forms">
+            <label>Email: 
+                <input id = "email" type="email" name="email" required autocomplete="off" />
+            </label>
+        </div>
+        <div class forms>
+            <label>Password: 
+                <input id = "password" type = "password" name = "password" autocomplete="off" required />
+            </label>
+        </div>
+        <button type = "submit"> Register </button>
+        
+    </form>
+    <div *ngIf="errorMessage">
+        <p>{{errorMessage}}</p> <!--Display error message-->
+    </div>
+   
+</div>
