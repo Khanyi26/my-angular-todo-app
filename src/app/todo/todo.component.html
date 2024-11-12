@@ -6,22 +6,28 @@
     <form (ngSubmit)="addTask()">
         
     
-        <input  (ngModel) = "taskName" name = "taskName" required placeholder = "Task Name" required/>
-        <select (ngModel) = "priority" name="priority" required>
+        <input type="text" [(ngModel)] = "taskName" name = "taskName" required placeholder = "Task Name" required/>
+        <select [(ngModel)] = "priority" name="priority" required>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
         </select>
 
-        <input type = "date" (ngModule) = "dueDate" name = "dueDate" required/>
+        <input type = "date" [(ngModel)] = "dueDate" name = "dueDate" placeholder = "Select Date" required/>
         <button type = "submit" > Add Task</button>
       
     </form>
-
+<!--Displayig  task name, priority level and due date-->
     <ul>
         <li *ngFor="let task of tasks">
-            {{ task.name }} - {{ task.priority }}
+          <p>Task Name: {{ task.name }} </p>
+          <p>Priority: {{ task.priority }} </p>  
+          <p>Due Date: {{task.dueDate}}</p>
             <button (click)="deleteTask(task)">Delete</button>
+
+            <!-- <p>Title: {{ task.name }}</p>
+            <p>Priority: {{ task.priority }} </p>
+            <p>Due Date: {{ task.dueDate | date: 'YYYY-MM-dd'}} </p>-->
         </li>
         
     </ul>

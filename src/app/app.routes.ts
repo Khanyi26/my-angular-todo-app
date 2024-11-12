@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from '../auth.guard';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 // Define routes
 export const routes: Routes = [
@@ -21,7 +22,7 @@ export const routes: Routes = [
 
 // Importing, Declaring and Exporting  modules and components
 @NgModule({
-    imports: [RouterModule.forRoot(routes), CommonModule, BrowserModule],
+    imports: [RouterModule.forRoot(routes), CommonModule, BrowserModule, FormsModule],
     exports: [RouterModule],
     bootstrap: [RegisterComponent],
     providers: [],

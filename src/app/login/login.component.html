@@ -6,12 +6,12 @@
         <h3>Please Enter Your Login Credentials:</h3>
         <div>
             <label>Email: 
-                <input id="email" (ngModel) = "email" type = "email" name = "email" required placeholder="Email" autocomplete="given-name"/>
+                <input id="email" [(ngModel)] = "email" type = "email" name = "email" required placeholder="Email" autocomplete="given-name"/>
             </label>
         </div>
         <div>
             <label>Password: 
-            <input id="password" (ngModel) = "password" type = "password" name = "password" required placeholder="Password" autocomplete="off"/>
+            <input id="password" [(ngModel)] = "password" type = "password" name = "password" required placeholder="Password" autocomplete="off"/>
         </label>
         </div>
         <button type = "submit">Login</button>

@@ -12,10 +12,10 @@ import { NgModel } from '@angular/forms';
 })
 
 export class TodoComponent  {
-  tasks: {name: string, priority:  string} [] = [];
+  tasks: {name: string, priority:  string ,dueDate:string} [] = [];
   taskName = "";
   priority = "Medium";
-  dueDate: any;
+  dueDate:any;
   priorities = ['High','Medium','Low'];
 
   constructor () {
@@ -25,7 +25,7 @@ export class TodoComponent  {
 
   //Add new tasks 
   addTask() {
-    const task = { name: this.taskName, priority: this.priority, dueDate:  this.dueDate};
+    const task = { name: this.taskName, priority: this.priority, dueDate: this.dueDate};
     this.tasks.push(task);
     this.saveTasks();
     this.taskName = '';
