@@ -96,7 +96,8 @@ to http://localhost:4200.
 
 
 ## Deployment
+<
 
 The deployment URL
-
 https://vercel.com/khanyi26s-projects/my-angular-todo-app/DwLR5NSZTQWHe6rvmcKXjg8ua5mm
+>>>>>>> 649b268a8887f8ec52c982d72ba4fb4b26801851
